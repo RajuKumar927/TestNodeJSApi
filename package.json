@@ -2,7 +2,7 @@
   "name": "api",
   "version": "1.0.0",
   "description": "API to connect sql server",
- "main": "app.js",
+ "main": "TestNodeJs.js",
   "scripts": {
   "start": "node app.js"
 },
