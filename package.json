@@ -2,20 +2,18 @@
   "name": "api",
   "version": "1.0.0",
   "description": "API to connect sql server",
-  "main": "app.js",
+ "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "node app.js"
+},
+  "repository": {
+  "type": "git",
+  "url": ""
+},
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "docker": "^1.0.0",
-    "express": "^4.17.1",
-    "sequelize": "^5.8.9",
-    "tedious": "^6.1.2"
-  },
-  "engines": {
-    "node": "12.16.x"
-  }
+  "bugs": {
+  "url": ""
+},
+  "homepage": ""
 }
