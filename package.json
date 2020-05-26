@@ -1,8 +1,8 @@
-
-  "name": "coolnodeapp",
+{
+  "name": "api",
   "version": "1.0.0",
-  "description": "node app ",
-  "main": "app.js",
+  "description": "API to connect sql server",
+ "main": "app.js",
   "scripts": {
   "start": "node app.js"
 },
@@ -12,8 +12,12 @@
 },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0"
+   
+  },
   "bugs": {
   "url": ""
 },
-  "homepage": "" 
+  "homepage": ""
 }
