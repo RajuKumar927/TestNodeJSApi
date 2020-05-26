@@ -10,3 +10,11 @@ const server = http.createServer((req, res) => {
 server.listen(port,() => {
   console.log(`Server running at port `+port);
 });
+
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+var router = require('./routes')();
+ 
+app.use('/api', router);
