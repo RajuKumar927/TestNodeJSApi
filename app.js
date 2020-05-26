@@ -15,6 +15,6 @@ app.use(bodyParser.json());
 
 var router = require('./routes')();
  
-app.use('/api', router);
+app.use('/api', router); 
 
 
