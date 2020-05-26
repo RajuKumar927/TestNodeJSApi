@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 var router = require('./routes')();
- fdfgdgdgdsgdsgds
+
 app.use('/api', router); 
 
 
