@@ -1,20 +1,20 @@
-const http = require('http');
-const port = process.env.PORT || 5000
+var express = require('express');
+var bodyParser = require('body-parser');
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  res.end('<h1>Hello World fddfdsfdsf</h1>');
+
+var app = express();
+
+var port = process.env.port || 3300
+
+app.listen(port, () => {
+    console.log("Hi This port is running");
 });
 
-server.listen(port,() => {
-  console.log(`Server running at port `+port);
-});
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-
+var router = require('./routes')();
  
-
-
-
+app.use('/api', router);
 
 
