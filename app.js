@@ -13,7 +13,7 @@ app.listen(port, () => {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var router = require('/TestNOdeJSApi/routes')();
+var router = require('./TestNOdeJSApi/routes')();
  
 app.use('/api', router); 
 
