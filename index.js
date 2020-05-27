@@ -59,4 +59,11 @@ var QueryToExecuteInDatabase = function (response, strQuery) {
 app.get("/Employee", function(_req ,_res){  
     var Sqlquery = "select * from Tbl_Employee";  
     QueryToExecuteInDatabase(_res, Sqlquery);  
-});  
+}); 
+
+
+
+app.post("Insert/Employee", function(req , res){
+                var query = "INSERT INTO [Tbl_Employee] (FirstName,Designation,Salary) VALUES (req.body.FirstName,req.body.Designation,req.body.Salary)";
+                executeQuery (res, query);
+});
