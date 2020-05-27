@@ -2,9 +2,9 @@
   "name": "coolnodeapp",
   "version": "1.0.0",
   "description": "node app ",
-  "main": "server.js",
+  "main": index.js",
   "scripts": {
-  "start": "node server.js"
+  "start": "node index.js"
 },
   "repository": {
   
