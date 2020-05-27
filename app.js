@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
   res.setHeader
 
 ('Content-Type', 'text/html');
-  res.end('<h1>Hello INTS </h1>');
+  res.end('<h1>Hello INTS Testing Server</h1>');
 });
 
 server.listen(port,() => {
