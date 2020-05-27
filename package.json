@@ -5,19 +5,7 @@
   "main": "app.js",
   "scripts": {
   "start": "node app.js"
-},
-  "repository": {
-  
 
-"type": "git",
-  "url": ""
-},
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-  "url": ""
-},
-  "homepage": ""
 }
 
 
