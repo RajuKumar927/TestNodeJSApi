@@ -1,20 +1,16 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+const http = require('http');
+const port = process.env.PORT || 3000
 
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader
 
-var app = express();
-
-var port = process.env.port || 3300
-
-app.listen(port, () => {
-    console.log("Hi This port is running");
+('Content-Type', 'text/html');
+  res.end('<h1>Hello INTS </h1>');
 });
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-var router = require('./TestNOdeJSApi/routes')();
- 
-app.use('/api', router); 
+server.listen(port,() => {
+  console.log(`Server running at port `+port);
+});
 
 
