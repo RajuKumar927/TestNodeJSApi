@@ -1,57 +1,25 @@
+
+
 {
-  "author": {
-    "name": "Patrik Simek",
-    "url": "https://patriksimek.cz"
-  },
-  "name": "mssql",
-  "description": "Microsoft SQL Server client for Node.js.",
-  "keywords": [
-    "database",
-    "mssql",
-    "sql",
-    "server",
-    "msnodesql",
-    "sqlserver",
-    "tds",
-    "node-tds",
-    "tedious",
-    "node-sqlserver",
-    "sqlserver",
-    "msnodesqlv8",
-    "azure",
-    "node-mssql"
-  ],
-  "version": "7.0.0-alpha.2",
-  "main": "index.js",
-  "repository": "github:RajuKumar927/TestNodeJsApi",
-  "license": "MIT",
-  "dependencies": {
-    "debug": "^4",
-    "tarn": "^1.1.5",
-    "tedious": "^8.3.0"
-  },
-  "devDependencies": {
-    "mocha": "^6.2.2",
-    "standard": "^14"
-  },
-  "engines": {
-    "node": ">=6"
-  },
-  "files": [
-    "lib/",
-    "bin/",
-    "*.js",
-    "*.md"
-  ],
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API to connect sql server",
+ "main": "app.js",
   "scripts": {
-    "test": "npm run lint && npm run test-unit",
-    "lint": "standard",
-    "test-unit": "node_modules/.bin/mocha --exit -t 15000 test/common/unit.js",
-    "test-tedious": "node_modules/.bin/mocha --exit -t 15000 test/tedious",
-    "test-msnodesqlv8": "node_modules/.bin/mocha --exit -t 15000 test/msnodesqlv8",
-    "test-cli": "node_modules/.bin/mocha --exit -t 15000 test/common/cli.js"
+  "start": "node app.js"
+},
+  "repository": {
+  "type": "git",
+  "url": ""
+},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0"
+   
   },
-  "bin": {
-    "mssql": "./bin/mssql"
-  }
+  "bugs": {
+  "url": ""
+},
+  "homepage": ""
 }
