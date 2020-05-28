@@ -17,7 +17,7 @@ app.use(function (req, res, next) {
 //Lets set up our local server now.  
 var server = app.listen(process.env.PORT || 4000, function () {  
     var port = server.address().port;  
-    console.log("App now running on port", port);  
+    console.log("App now running on port", $port);  
 });  
   
 //Set up your sql connection string, i am using here my own, you have to replace it with your own.  
